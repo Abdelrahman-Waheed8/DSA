@@ -18,6 +18,3 @@ So the time complexity it O(n)
 
 - Space complexity:
 O(n)
-
-}
-```
