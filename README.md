@@ -3,33 +3,21 @@ Focusing on Solving leetcode problems using the NeetCode.io Roadmap and providin
 
 # 1.Contains Duplicate
 ## Intuition
-<!-- Describe your first thoughts on how to solve this problem. -->
+At first, I thought of a Brute force approach but basically it wouldn't be ideal since we will iterate into the array using a for loop and another for loop to check if there's duplicates which will result in a solution with Time Complexity of O(n^2) 
 
+## Approach
+I figured out using a Dictionary or Hash map would be much better since they search for a value by specific key and that key is unique, so at first we need to iterate through the given array using a for loop and using a pre-declared Dictionary we store the values in the array as a key in the dictionary (taking advantage of the key being unique) and store the index in the value which we can use to determine where did the duplication happen. Checks if the dictionary has a key with the array value of it if yes return true and if not we add that value to the dictionary as a key and then return false as an exit of the function
 
-# Approach
-<!-- Describe your approach to solving the problem. -->
-
-# Complexity
+## Analysis
 - Time complexity:
-<!-- Add your time complexity here, e.g. $$O(n)$$ -->
+We used a single for loop
+```
+for (int i = 0; i < nums.Length; i++)
+```
+So the time complexity it O(n)
 
 - Space complexity:
-<!-- Add your space complexity here, e.g. $$O(n)$$ -->
+O(n)
 
-# Code
-```csharp []
-public class Solution {
-    public bool ContainsDuplicate(int[] nums) {
-        Dictionary<int, int> seen = new();
-        for (int i = 0; i < nums.Length; i++) {
-            if (seen.ContainsKey(nums[i]))
-            {
-                return true;
-            }
-
-            seen.Add(nums[i], i);
-        }
-        return false;
-    }
 }
 ```
