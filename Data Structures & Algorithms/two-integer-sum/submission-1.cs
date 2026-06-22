@@ -1,4 +1,4 @@
-public class Solution {
+public class twoSum {
     public int[] TwoSum(int[] nums, int target) {
         Dictionary<int, int> map = new();
 

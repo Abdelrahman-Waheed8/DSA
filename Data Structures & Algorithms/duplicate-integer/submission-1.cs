@@ -1,4 +1,4 @@
-public class Solution {
+public class Duplicate {
     public bool hasDuplicate(int[] nums) {
         Dictionary<int, int> seen = new();
         for (int i = 0; i < nums.Length; i++) {
