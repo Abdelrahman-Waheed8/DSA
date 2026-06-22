@@ -1,4 +1,4 @@
-public class Solution {
+public class Anagram {
     public bool IsAnagram(string s, string t) {
         if(s.Length != t.Length) {return false;}
         Dictionary<char, int> firstString = new();

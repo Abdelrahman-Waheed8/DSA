@@ -1,4 +1,10 @@
-public class topK {
+using System;
+using System.Collections.Generic;
+
+public class topKelements
+{
+    public topKelements() {}
+
     public int[] TopKFrequent(int[] nums, int k)
     {
         Dictionary<int, int> hashmap = new();

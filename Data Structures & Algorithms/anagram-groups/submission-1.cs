@@ -1,4 +1,4 @@
-public class Solution {
+public class anagramGp {
     public List<List<string>> GroupAnagrams(string[] strs) {
         Dictionary<string, List<string>> hashmap = new();
         char[] sorted ;

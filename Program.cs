@@ -17,13 +17,23 @@ public class DSA
         // Console.WriteLine(anagram.IsAnagram(a, b));
 
         // GROUP ANAGRAM
-        GroupAnagram groupAnagram = new GroupAnagram();
-        string[] strs = ["act","pots","tops","cat","stop","hat"];
-        List<List<string>> list = groupAnagram.GroupAnagrams(strs);
-        foreach (List<string> group in list)
+        // GroupAnagram groupAnagram = new GroupAnagram();
+        // string[] strs = ["act","pots","tops","cat","stop","hat"];
+        // List<List<string>> list = groupAnagram.GroupAnagrams(strs);
+        // foreach (List<string> group in list)
+        // {
+        // // Join the words in this group with a space (or a comma) and print
+        // Console.WriteLine(string.Join(" ", group));
+        // }
+
+        // TOP K ELEMENTS 
+        topKelements top = new topKelements();
+        int[] nums = [1,2,2,3,3,3];
+        int k = 2;
+        int[] arr = top.TopKFrequent(nums, k);
+        for(int i = 0 ; i <arr.Length; i++)
         {
-        // Join the words in this group with a space (or a comma) and print
-        Console.WriteLine(string.Join(" ", group));
+            Console.Write(arr[i] + " "); 
         }
     }
 }
