@@ -38,13 +38,18 @@ public class DSA
         // }
 
         // ENCODE AND DECODE STRINGS
-        EncodeAndDecode Func = new EncodeAndDecode();
-        List<string> strings = ["str", "hello"];
-        Console.WriteLine("Encoded strings: " + Func.Encode(strings));
-        List<string> decoded = Func.Decode(Func.Encode(strings));
-        foreach(string s in decoded)
-        {
-            Console.Write(s + " ");
-        }
+        // EncodeAndDecode Func = new EncodeAndDecode();
+        // List<string> strings = ["str", "hello"];
+        // Console.WriteLine("Encoded strings: " + Func.Encode(strings));
+        // List<string> decoded = Func.Decode(Func.Encode(strings));
+        // foreach(string s in decoded)
+        // {
+        //     Console.Write(s + " ");
+        // }
+
+        // MAX WORDS IN SENTENSES 
+        MaxWords max = new MaxWords();
+        string[] scentenses = ["I love barbie", "Jana no", "Marwan pablo"];
+        Console.WriteLine(max.MostWordsFound(scentenses));
     }
 }
