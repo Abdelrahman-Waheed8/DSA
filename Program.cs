@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 public class DSA
 {
@@ -27,13 +28,23 @@ public class DSA
         // }
 
         // TOP K ELEMENTS 
-        topKelements top = new topKelements();
-        int[] nums = [1,2,2,3,3,3];
-        int k = 2;
-        int[] arr = top.TopKFrequent(nums, k);
-        for(int i = 0 ; i <arr.Length; i++)
+        // topKelements top = new topKelements();
+        // int[] nums = [1,2,2,3,3,3];
+        // int k = 2;
+        // int[] arr = top.TopKFrequent(nums, k);
+        // for(int i = 0 ; i <arr.Length; i++)
+        // {
+        //     Console.Write(arr[i] + " "); 
+        // }
+
+        // ENCODE AND DECODE STRINGS
+        EncodeAndDecode Func = new EncodeAndDecode();
+        List<string> strings = ["str", "hello"];
+        Console.WriteLine("Encoded strings: " + Func.Encode(strings));
+        List<string> decoded = Func.Decode(Func.Encode(strings));
+        foreach(string s in decoded)
         {
-            Console.Write(arr[i] + " "); 
+            Console.Write(s + " ");
         }
     }
 }

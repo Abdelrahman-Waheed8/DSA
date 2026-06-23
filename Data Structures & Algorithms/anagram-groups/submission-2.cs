@@ -1,4 +1,4 @@
-public class Solution {
+public class GroupAnagramsTwo {
     public List<List<string>> GroupAnagrams(string[] strs) {
         var res = new Dictionary<string, List<string>>();
         foreach (var s in strs) {

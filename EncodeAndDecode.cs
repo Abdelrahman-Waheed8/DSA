@@ -1,6 +1,12 @@
-public class EncodeAndDecodesub {
+using System;
+using System.Collections.Generic;
 
-    public string Encode(IList<string> strs) {
+public class EncodeAndDecode
+{
+    public EncodeAndDecode() {}
+
+    public string Encode(List<string> strs)
+    {
         string Encoded = ""; int count;
         foreach(string s in strs)
         {
@@ -10,7 +16,8 @@ public class EncodeAndDecodesub {
         return Encoded;
     }
 
-    public List<string> Decode(string s) {
+    public List<string> Decode(string s)
+    {
         int digit;
         var decodedStrings = new List<string>();
         int i = 0;
@@ -35,5 +42,5 @@ public class EncodeAndDecodesub {
             decodedStrings.Add(decoded);
         }
         return decodedStrings;
-   }
+    }
 }
