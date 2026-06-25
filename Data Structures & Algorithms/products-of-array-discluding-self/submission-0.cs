@@ -1,7 +1,6 @@
-public class Solution {
+public class product1 {
     public int[] ProductExceptSelf(int[] nums) {
         int[] product = new int[nums.Length];
-        int counter = 0;
         for(int i = 0 ; i< nums.Length; i++)
         {
             int result = 1;

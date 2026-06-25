@@ -1,4 +1,4 @@
-public class Solution {
+public class product3 {
     public int[] ProductExceptSelf(int[] nums) {
         int[] prefix = new int[nums.Length];
         int[] suffix = new int[nums.Length];
