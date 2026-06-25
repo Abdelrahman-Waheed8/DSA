@@ -48,8 +48,17 @@ public class DSA
         // }
 
         // MAX WORDS IN SENTENSES 
-        MaxWords max = new MaxWords();
-        string[] scentenses = ["I love barbie", "Jana no", "Marwan pablo"];
-        Console.WriteLine(max.MostWordsFound(scentenses));
+        // MaxWords max = new MaxWords();
+        // string[] scentenses = ["I love barbie", "Jana no", "Marwan pablo"];
+        // Console.WriteLine(max.MostWordsFound(scentenses));
+
+        // PRODUCT OF ARRAY EXCEPT SELF
+        ProductOfArray product = new ProductOfArray();
+        int[] nums = [1,2,4,6];
+        int[] result = product.ProductExceptSelf(nums);
+        for(int i = 0 ; i < result.Length ; i++)
+        {
+            Console.Write(result[i] + " ");
+        }
     }
 }
