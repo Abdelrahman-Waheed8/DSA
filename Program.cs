@@ -53,12 +53,24 @@ public class DSA
         // Console.WriteLine(max.MostWordsFound(scentenses));
 
         // PRODUCT OF ARRAY EXCEPT SELF
-        ProductOfArray product = new ProductOfArray();
-        int[] nums = [1,2,4,6];
-        int[] result = product.ProductExceptSelf(nums);
-        for(int i = 0 ; i < result.Length ; i++)
+        // ProductOfArray product = new ProductOfArray();
+        // int[] nums = [1,2,4,6];
+        // int[] result = product.ProductExceptSelf(nums);
+        // for(int i = 0 ; i < result.Length ; i++)
+        // {
+        //     Console.Write(result[i] + " ");
+        // }
+
+        // 3Sum
+        Threesum threesum = new Threesum();
+        int[] nums = [-1,0,1,2,-1,-4];
+        foreach(var s in threesum.ThreeSum(nums))
         {
-            Console.Write(result[i] + " ");
+            foreach(var i in s)
+            {
+                Console.Write(i + " ");
+            }
+            Console.WriteLine();
         }
     }
 }

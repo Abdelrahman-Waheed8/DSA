@@ -1,4 +1,4 @@
-public class Solution {
+public class palinDromeeeeee {
     public bool IsPalindrome(string s) {
         int left = 0;
         int right = s.Length -1;

@@ -1,4 +1,4 @@
-public class Solution {
+public class ValidddS {
     public bool IsValidSudoku(char[][] board) {
         HashSet<char>[] columns = new HashSet<char>[9];
         HashSet<char>[] rows = new HashSet<char>[9];

@@ -1,4 +1,4 @@
-public class Solution {
+public class Palindromee {
     public bool IsPalindrome(string s) {
         if (string.IsNullOrEmpty(s)) return true;
 
